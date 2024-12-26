@@ -1,19 +1,57 @@
-<div style="text-align: center; font-family: Arial, sans-serif; padding: 20px;">
-  <header style="background-color: #007BFF; color: white; padding: 10px;">
-    <h1>Shresth Kapoor</h1>
-    <p>Welcome to my portfolio</p>
+<div style="font-family: Arial, sans-serif;">
+  <header style="background-color: #007BFF; color: white; padding: 20px; text-align: center;">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="https://avatars.githubusercontent.com/u/73338689?s=400&u=64ff6a0a645d9b7d720739be1e7108eb6d053813&v=4" alt="Profile Picture" style="width: 200px; height: 200px; border-radius: 50%;">
+      <h1>Shresth Kapoor</h1>
+      <p>Coder passionate about building meaningful solutions</p>
+    </div>
   </header>
 
-  <section>
-    <h2 style="color: #007BFF;">Projects</h2>
-    <div *ngFor="let project of projects" style="margin: 10px; padding: 10px; border: 1px solid #ddd;">
-      <h3>{{ project.title }}</h3>
-      <p>{{ project.description }}</p>
-      <a [href]="project.link" target="_blank">View Project</a>
-    </div>
-  </section>
+  <nav style="display: flex; justify-content: center; background-color: #f8f9fa; padding: 10px;">
+    <button (click)="currentTab = 'socials'" [style.color]="currentTab === 'socials' ? '#007BFF' : 'black'" style="margin: 0 10px; background: none; border: none; cursor: pointer;">Socials</button>
+    <button (click)="currentTab = 'projects'" [style.color]="currentTab === 'projects' ? '#007BFF' : 'black'" style="margin: 0 10px; background: none; border: none; cursor: pointer;">Projects</button>
+    <button (click)="currentTab = 'articles'" [style.color]="currentTab === 'articles' ? '#007BFF' : 'black'" style="margin: 0 10px; background: none; border: none; cursor: pointer;">Articles</button>
+  </nav>
 
-  <footer style="margin-top: 20px; color: gray;">
+  <main style="padding: 20px;">
+    <!-- Socials Section -->
+    <section *ngIf="currentTab === 'socials'" style="text-align: center;">
+      <h2 style="color: #007BFF;">Socials</h2>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div *ngFor="let social of socials" style="border: 1px solid #ddd; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+          <img [src]="social.icon" alt="{{ social.name }}" style="width: 50px; height: 50px; border-radius: 50%;">
+          <h3>{{ social.name }}</h3>
+          <a [href]="social.link" target="_blank" style="color: #007BFF;">Visit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section *ngIf="currentTab === 'projects'" style="text-align: center;">
+      <h2 style="color: #007BFF;">Projects</h2>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div *ngFor="let project of projects" style="border: 1px solid #ddd; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <a [href]="project.link" target="_blank" style="color: #007BFF;">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section *ngIf="currentTab === 'articles'" style="text-align: center;">
+      <h2 style="color: #007BFF;">Articles</h2>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div *ngFor="let article of articles" style="border: 1px solid #ddd; margin: 10px; padding: 20px; width: 200px; text-align: center;">
+          <h3>{{ article.title }}</h3>
+          <p>{{ article.description }}</p>
+          <a [href]="article.link" target="_blank" style="color: #007BFF;">Read More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="margin-top: 20px; color: gray; text-align: center;">
     <p>© {{ year }} Shresth Kapoor</p>
   </footer>
 </div>
