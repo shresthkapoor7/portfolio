@@ -12,14 +12,22 @@ function About() {
 
   return (
     <section className="about">
-      <div className="about-content" style={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}>
+      <div
+        className="about-content"
+        style={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}
+      >
         <div className="about-text" style={{ flex: 1 }}>
           <h2>Hello, I'm {name}.</h2>
-          <p><strong>{title}</strong></p>
+          <p>
+            <strong>{title}</strong>
+          </p>
           <p>{description}</p>
           <p>{additionalInfo}</p>
 
-          <div className="cta-buttons" style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}>
+          <div
+            className="cta-buttons"
+            style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}
+          >
             <a
               href="mailto:shresthkapoor7@gmail.com"
               className="cta-button"
@@ -30,7 +38,9 @@ function About() {
                 textDecoration: "none",
               }}
             >
-              <span role="img" aria-label="email">📨</span>
+              <span role="img" aria-label="email">
+                📨
+              </span>
               <span style={{ textDecoration: "underline" }}>Get in touch</span>
             </a>
 
@@ -44,51 +54,78 @@ function About() {
                 textDecoration: "none",
               }}
             >
-              <span role="img" aria-label="resume">📄</span>
-              <span style={{ textDecoration: "underline" }}>Download Resume</span>
+              <span role="img" aria-label="resume">
+                📄
+              </span>
+              <span style={{ textDecoration: "underline" }}>
+                Download Resume
+              </span>
             </a>
           </div>
         </div>
 
         <div
-  className="about-image"
-  style={{
-    flex: "0 0 250px",
-    textAlign: "center",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: "1rem",
-  }}
->
-  <img
-    src={shreshthImage}
-    alt="Shresth Kapoor"
-    style={{
-      width: "220px",
-      height: "220px",
-      borderRadius: "10%",
-      objectFit: "cover",
-    }}
-  />
-
-        <div
-            style={{
+          className="about-image"
+          style={{
+            flex: "0 0 250px",
+            textAlign: "center",
             display: "flex",
-            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
             gap: "1rem",
-            }}
+          }}
         >
-            <a href="https://twitter.com/shresthkapoor7" target="_blank" rel="noopener noreferrer">
-            <FaTwitter size={24} color="#1DA1F2" />
+          <img
+            src={shreshthImage}
+            alt="Shresth Kapoor"
+            style={{
+              width: "220px",
+              height: "220px",
+              borderRadius: "10%",
+              objectFit: "cover",
+            }}
+          />
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "1rem",
+            }}
+          >
+            <a
+              href="https://twitter.com/shresthkapoor7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter size={24} color="black" />
             </a>
-            <a href="https://www.linkedin.com/in/shresthkapoor7" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={24} color="#0077B5" />
+            <a
+              href="https://www.linkedin.com/in/shresth-kapoor-7skp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={24} color="black" />
             </a>
-            <a href="https://github.com/shresthkapoor7" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={24} color="#333" />
+            <a
+              href="https://github.com/shresthkapoor7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={24} color="black" />
             </a>
-        </div>
+            <a
+              href="https://leetcode.com/u/shresthkapoor7/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://leetcode.com/favicon.ico"
+                alt="LeetCode"
+                style={{ width: 24, height: 24 }}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -35,8 +35,8 @@ function Projects() {
       description:
         "The very site you're browsing right now — designed and built from scratch to showcase my skills, projects, and personality.",
       category: "featured",
-      tag: "React · Vite · CSS",
-      url: "/",
+      tag: "React · GitHub Pages",
+      url: "/portfolio",
     },
   ];
 
@@ -72,22 +72,22 @@ function Projects() {
       <div className="projects-grid">
         {filteredProjects.map((project) => (
           <a
-            key={project.id}
-            href={project.url}
-            target={project.url === "/" ? "_self" : "_blank"}
-            rel="noopener noreferrer"
-            onClick={() => {
-              if (project.id === "project4") {
-                localStorage.setItem("fromPortfolioProject", "true");
-              }
-            }}
-            className="project-card"
-            style={{
-              textDecoration: "none",
-              color: "inherit",
-              cursor: "pointer",
-            }}
-          >
+          key={project.id}
+          href={project.url}
+          target={project.id === "project4" ? "_self" : "_blank"}
+          rel="noopener noreferrer"
+          onClick={() => {
+            if (project.id === "project4") {
+              localStorage.setItem("fromPortfolioProject", "true");
+            }
+          }}
+          className="project-card"
+          style={{
+            textDecoration: "none",
+            color: "inherit",
+            cursor: "pointer",
+          }}
+        >
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="project-tag">{project.tag}</div>

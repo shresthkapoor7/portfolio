@@ -18,6 +18,9 @@ function Education() {
             <em>Master of Science in Computer Science</em>
           </p>
           <p>
+            <strong>GPA: </strong> 3.667/4.0
+          </p>
+          <p>
             <strong>Relevant Courses:</strong> Artificial Intelligence, Human Computer Interaction, Programming
             Languages, Machine Learning, Design and Analysis of Algorithms, Operating Systems.
           </p>
@@ -33,6 +36,9 @@ function Education() {
           </div>
           <p className="edu-subtitle">
             <em>Bachelor of Technology in Computer Science</em>
+          </p>
+          <p>
+            <strong>GPA: </strong> 9.23/10.0
           </p>
           <p>
             <strong>Relevant Courses:</strong> Data Structures and Algorithms, Operating Systems, Computer Networks,
