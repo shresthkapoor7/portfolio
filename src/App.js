@@ -1,52 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import Header from './components/Header';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Education from './components/Education';
+import Experience from './components/Experience';
 
-const Portfolio = () => {
+function App() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const cameBack = localStorage.getItem('fromPortfolioProject');
+    if (cameBack === 'true') {
+      setShowPopup(true);
+      localStorage.removeItem('fromPortfolioProject');
+    }
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white text-black">
-      <div className="container mx-auto px-8 md:px-16 flex flex-col md:flex-row items-center">
-        {/* Left Section - Image */}
-        <div className="md:w-1/2 flex justify-center">
-          <div className="relative">
-            <img
-              src="/profile.jpg" // Replace with your actual image path
-              alt="Profile"
-              className="w-80 h-80 object-cover rounded-lg shadow-lg grayscale"
-            />
-            <h1 className="absolute top-0 left-4 text-3xl md:text-4xl font-signature text-red-500">
-              Shresth Kapoor
-            </h1>
+    <div className="app">
+      <div className="container">
+        {showPopup && (
+          <div
+            style={{
+              background: '#fef9c3',
+              border: '1px solid #fde047',
+              padding: '1rem',
+              margin: '1rem 0',
+              borderRadius: '8px',
+              color: '#92400e',
+              fontWeight: '500',
+              textAlign: 'center',
+            }}
+          >
+            🌀 <strong>Recursion detected!</strong> You clicked the Portfolio from inside the Portfolio.
           </div>
-        </div>
+        )}
 
-        {/* Right Section - Text */}
-        <div className="md:w-1/2 mt-8 md:mt-0 md:ml-12 text-left">
-          <h2 className="text-4xl font-bold">Hi,</h2>
-          <p className="mt-4 text-lg">
-            I am a <span className="text-red-500 font-semibold">Software Engineer</span> passionate about building
-            scalable and elegant solutions. I specialize in <span className="text-red-500 font-semibold">React, Spring Boot, and AI</span>.
-          </p>
-          <p className="mt-2 text-lg">
-            Currently pursuing my <span className="text-red-500 font-semibold">MS in Computer Science at NYU</span>.
-          </p>
-          <div className="mt-6">
-            <a
-              href="/resume.pdf" // Replace with your actual resume link
-              className="text-red-500 font-semibold border-b-2 border-red-500 hover:text-red-700"
-            >
-              DOWNLOAD CV
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Navigation */}
-      <div className="absolute top-4 right-8 flex space-x-6 text-lg font-semibold">
-        <a href="#about" className="hover:text-red-500">About</a>
-        <a href="#work" className="hover:text-red-500">Work</a>
-        <a href="#contact" className="hover:text-red-500">Contact</a>
+        <Header />
+        <About />
+        <Experience />
+        <Skills />
+        <Education />
+        <Projects />
       </div>
     </div>
   );
-};
+}
 
-export default Portfolio;
+export default App;
