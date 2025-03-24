@@ -17,10 +17,13 @@ This is my personal portfolio website built using **React** and deployed via **G
 ---
 
 ## 📁 Folder Structure
+
+<pre>
 public/
 ├── images/
 ├── favicon.ico
 └── index.html
+
 src/
 ├── components/
 │   ├── Header.js
@@ -32,6 +35,8 @@ src/
 ├── App.js
 ├── App.css
 └── index.js
+</pre>
+
 
 ---
 
