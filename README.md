@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 💼 Shresth Kapoor — Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal portfolio website built using **React** and deployed via **GitHub Pages**. It highlights my experience, skills, projects, and more!
 
-## Available Scripts
+🔗 [View Live](https://shresthkapoor7.github.io/portfolio/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠️ Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ⚛️ React (Create React App)
+- 🎨 CSS3 (custom styling, no frameworks)
+- 🚀 GitHub Pages (deployment)
+- 🖼️ React Icons
+- ❤️ Pure developer energy + caffeine
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📁 Folder Structure
+public/
+├── images/
+├── favicon.ico
+└── index.html
+src/
+├── components/
+│   ├── Header.js
+│   ├── About.js
+│   ├── Experience.js
+│   ├── Education.js
+│   ├── Skills.js
+│   └── Projects.js
+├── App.js
+├── App.css
+└── index.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📸 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Interactive project section with external links
+- "Recursion detected!" popup if you click the portfolio from the portfolio
+- Rotating banner messages with smart styling
+- Fully responsive layout
+- Clean animations and minimalist design
+- Custom favicon and tab title
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Run Locally
 
-### `npm run eject`
+```bash
+git clone https://github.com/shresthkapoor7/portfolio.git
+cd portfolio
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This portfolio is deployed using GitHub Pages.
+To redeploy:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+npm run deploy
+```
 
-## Learn More
+Make sure homepage is set correctly in package.json:
+```json
+"homepage": "https://shresthkapoor7.github.io/portfolio"
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🙋‍♂️ About Me
 
-### Code Splitting
+I’m Shresth Kapoor, a graduate student at NYU, passionate about building clean, impactful software.
+Previously at TalentTitan — currently exploring opportunities and writing neat code!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🤝 Connect with Me
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [LinkedIn](https://www.linkedin.com/in/shresth-kapoor-7skp/)
+- [GitHub](https://github.com/shresthkapoor7)
+- [Twitter](https://twitter.com/shresthkapoor7)
