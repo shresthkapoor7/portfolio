@@ -12,9 +12,9 @@ function App() {
   const [messageIndex, setMessageIndex] = useState(0);
 
   const funMessages = [
-    "🚨 Stalker: Stalker Alert.",
-    "🧠 Fun Fact: This changes every 7 seconds, try out portfolio project for a special message",
     "💡 Idea: Let's ship my machine to the users",
+    "🧠 Fun Fact: This changes every 10 seconds, try out portfolio project for a special message",
+    "🚨 Stalker: Stalker Alert.",
     "🤓 Tip: If you don't know what you're doing, try throwing hash-maps at the question",
     "❤️ Stack : Made with React and Love"
   ];
@@ -53,7 +53,7 @@ function App() {
 
       const timeout = setTimeout(() => {
         setShowPopup(false);
-      }, 7000);
+      }, 10000);
 
       return () => clearTimeout(timeout);
     }
@@ -64,7 +64,7 @@ function App() {
     if (!showPopup) {
       const interval = setInterval(() => {
         setMessageIndex((prev) => (prev + 1) % funMessages.length);
-      }, 15000);
+      }, 10000);
       return () => clearInterval(interval);
     }
   }, [showPopup, funMessages.length]);
