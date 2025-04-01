@@ -38,6 +38,15 @@ function Projects() {
       tag: "React · GitHub Pages",
       url: "/portfolio",
     },
+    {
+      id: "project5",
+      title: "TrackMate – Career Fair Job Tracker",
+      description:
+      "Web app that helps students at career fairs quickly save job listings by scanning QR codes or pasting links. Built with Firebase Auth & Firestore.",
+      category: "featured",
+      tag: "React · Firebase · QR Scanner",
+      url: "https://shresthkapoor7.github.io/careerfair-tracker/",
+    }
   ];
 
   const [activeCategory, setActiveCategory] = useState("featured");
