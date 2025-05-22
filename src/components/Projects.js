@@ -46,6 +46,15 @@ function Projects() {
       category: "featured",
       tag: "React · Firebase · QR Scanner",
       url: "https://shresthkapoor7.github.io/careerfair-tracker/",
+    },
+    {
+      id: "project6",
+      title: "Strands - LLM + Threads 🔥 (Work in Progress)",
+      description:
+      "Instead of a flat, endless chat history, Strands lets you naturally branch conversations, ask follow-up questions, explore alternative ideas — without ever losing the flow.",
+      category: "featured",
+      tag: "React",
+      url: "https://shresthkapoor7.github.io/strands/home",
     }
   ];
 

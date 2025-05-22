@@ -5,8 +5,15 @@ import shreshthImage from "../images/shresth.jpg";
 function About() {
   const name = "Shresth Kapoor";
   const title = "MS in Computer Science @ NYU";
-  const description =
-    "I'm a graduate student passionate about software engineering and AI. I enjoy building meaningful web and mobile applications that make a real difference.";
+  const paragraphs = [
+    "I build apps that don’t crash (mostly) and features people (me being the primary user) actually use. Web, mobile, AI — if it’s interesting and slightly chaotic, I’m in.",
+
+    "At TalentTitan, I led full-stack development during a rebrand, cleaned up legacy code like it owed me money, and turned SonarQube red into green like it was a personal vendetta. Frontend to backend — no untouched files.",
+
+    "Lately I’ve been hacking on AI workflows, building a RAG system for Obsidian, and trying not to accidentally ship a full product during a weekend side quest. Half my commits start with ‘quick fix’ and end up being entire rewrites.",
+
+    "When I’m not deep in terminal tabs, I’m probably customizing my dotfiles, switching tech stacks for fun, or tweeting hot takes about Spotify, Vim, and being haunted by my own Git history."
+  ];
   const additionalInfo =
     "Previously, I worked as a Software Engineer at TalentTitan, where I improved system performance and led full-stack development. I'm always exploring new ideas, whether it’s through academic projects or real-world solutions.";
 
@@ -21,8 +28,9 @@ function About() {
           <p>
             <strong>{title}</strong>
           </p>
-          <p>{description}</p>
-          <p>{additionalInfo}</p>
+          {paragraphs.map((para, index) => (
+            <p key={index}>{para}</p>
+          ))}
 
           <div
             className="cta-buttons"
@@ -45,7 +53,7 @@ function About() {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1xb9JRVuZlKd4x8dcKZmtXG_rPaZmExtX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Gz0Hkkq71m8NEFlYLCsMxa33I-yW7Ni2/view"
               className="cta-button"
               style={{
                 display: "flex",
@@ -79,9 +87,9 @@ function About() {
             src={shreshthImage}
             alt="Shresth Kapoor"
             style={{
-              width: "220px",
-              height: "220px",
-              borderRadius: "10%",
+              width: "260px",
+              height: "260px",
+              borderRadius: "7%",
               objectFit: "cover",
             }}
           />
