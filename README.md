@@ -1,93 +1,50 @@
 # 💼 Shresth Kapoor — Developer Portfolio
 
-This is my personal portfolio website built using **React** and deployed via **GitHub Pages**. It highlights my experience, skills, projects, and more!
+This is my personal portfolio site, built with **React** and deployed via **GitHub Pages**.
+It’s meant to be *seen*, not cloned.
 
-🔗 [View Live](https://shresthkapoor7.github.io/portfolio/)
+🔗 [**View It Live**](https://shresthkapoor7.github.io/portfolio/)
+🛑 Not intended for local use or reproduction.
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tech Stack
 
 - ⚛️ React (Create React App)
-- 🎨 CSS3 (custom styling, no frameworks)
-- 🚀 GitHub Pages (deployment)
+- 🎨 Custom CSS (no UI frameworks)
 - 🖼️ React Icons
-- ❤️ Pure developer energy + caffeine
+- 🚀 Deployed via GitHub Pages
+- 💡 Fueled by focus, caffeine, and way too many terminal tabs
 
 ---
 
-## 📁 Folder Structure
+## ✨ Highlights
 
-<pre>
-public/
-├── images/
-├── favicon.ico
-└── index.html
-
-src/
-├── components/
-│   ├── Header.js
-│   ├── About.js
-│   ├── Experience.js
-│   ├── Education.js
-│   ├── Skills.js
-│   └── Projects.js
-├── App.js
-├── App.css
-└── index.js
-</pre>
-
+- Interactive projects section with external links
+- Smart rotating banner messages
+- “Recursion Detected” popup for the easter egg hunters
+- Minimalist design, smooth animations
+- Fully responsive
+- Custom favicon + dynamic tab title
 
 ---
 
-## 📸 Features
+## ⚠️ A Quick Note
 
-- Interactive project section with external links
-- "Recursion detected!" popup if you click the portfolio from the portfolio
-- Rotating banner messages with smart styling
-- Fully responsive layout
-- Clean animations and minimalist design
-- Custom favicon and tab title
+If you’re here looking to run this locally — don’t.
+
+This project is live at the link above, and it's not meant to be cloned, modified, or reused without context.
+You're welcome to get inspired, but if you're copy-pasting, at least name a variable after me.
 
 ---
 
-## ⚙️ Run Locally
+## 🚀 Deployment Details (for my future self)
 
-```bash
-git clone https://github.com/shresthkapoor7/portfolio.git
-cd portfolio
-npm install
-npm start
-```
-
----
-
-## 🚀 Deployment
-
-This portfolio is deployed using GitHub Pages.
-To redeploy:
+Deployed via GitHub Pages using:
 
 ```bash
 npm run build
 npm run deploy
 ```
 
-Make sure homepage is set correctly in package.json:
-```json
-"homepage": "https://shresthkapoor7.github.io/portfolio"
-```
-
----
-
-## 🙋‍♂️ About Me
-
-I’m Shresth Kapoor, a graduate student at NYU, passionate about building clean, impactful software.
-Previously at TalentTitan — currently exploring opportunities and writing neat code!
-
----
-
-## 🤝 Connect with Me
-
-- [LinkedIn](https://www.linkedin.com/in/shresth-kapoor-7skp/)
-- [GitHub](https://github.com/shresthkapoor7)
-- [Twitter](https://twitter.com/shresthkapoor7)
+If nothing else, thanks for scrolling. Now go check out the live site like a civilized human.
