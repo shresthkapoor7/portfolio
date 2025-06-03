@@ -53,8 +53,17 @@ function Projects() {
       description:
       "Instead of a flat, endless chat history, Strands lets you naturally branch conversations, ask follow-up questions, explore alternative ideas — without ever losing the flow.",
       category: "featured",
-      tag: "React",
-      url: "https://shresthkapoor7.github.io/strands/home",
+      tag: "React · Express · AWS EC2 · TypeScript · Gemini · Supabase · SwiftUI",
+      url: "https://www.strandschat.com/",
+    },
+    {
+      id: "project7",
+      title: "AgroSynth x Reboot The Earth Hackathon",
+      description:
+      "AgroSynth Weather Intelligence is an open-source platform for agriculture and communities, offering real-time weather data, user alerts, AI forecasts, and interactive maps in a sleek, responsive web app.",
+      category: "featured",
+      tag: "React · Supabase · OpenRouter · React Leaflet",
+      url: "https://shresthkapoor7.github.io/agrosynth/",
     }
   ];
 
