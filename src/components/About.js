@@ -6,16 +6,14 @@ function About() {
   const name = "Shresth Kapoor";
   const title = "MS in Computer Science ";
   const paragraphs = [
-    "I build apps that don't crash (mostly) and features people (me being the primary user) actually use. Web, mobile, AI — if it's interesting and slightly chaotic, I'm in.",
+    "I build web, mobile, and AI applications that are reliable, useful, and user-focused. I enjoy working on projects that are both technically challenging and meaningful.",
 
-    "At TalentTitan, I led full-stack development during a rebrand, cleaned up legacy code like it owed me money, and turned SonarQube red into green like it was a personal vendetta. Frontend to backend — no untouched files.",
+    "Previously I was a Software Engineer at TalentTitan, I worked as a full-stack developer during a company rebrand. I cleaned up legacy code, improved performance, and contributed across both frontend and backend systems. I also led efforts to improve code quality using SonarQube and other tools.",
 
-    "Lately I've been hacking on AI workflows, building a RAG system for Obsidian, and trying not to accidentally ship a full product during a weekend side quest. Half my commits start with 'quick fix' and end up being entire rewrites.",
+    "Recently, I’ve been working on AI workflows, including a Retrieval-Augmented Generation (RAG) system for Obsidian. I enjoy exploring new technologies and often take on side projects to learn and build.",
 
-    "When I'm not deep in terminal tabs, I'm probably customizing my dotfiles, switching tech stacks for fun, or tweeting hot takes about Spotify, Vim, and being haunted by my own Git history."
+    "In my free time, I like customizing my development setup, trying out new tech stacks, and improving my skills through personal projects."
   ];
-  const additionalInfo =
-    "Previously, I worked as a Software Engineer at TalentTitan, where I improved system performance and led full-stack development. I'm always exploring new ideas, whether it's through academic projects or real-world solutions.";
 
   return (
     <section className="about">
@@ -29,7 +27,9 @@ function About() {
             <strong>{title}<span style={{ color: 'purple' }}>@ <a href="https://www.nyu.edu/" target="_blank" rel="noopener noreferrer" style={{ color: 'purple', textDecoration: 'none' }}>New York University</a></span></strong>
           </p>
           {paragraphs.map((para, index) => (
-            <p key={index}>{para}</p>
+            <p key={index} style={{ marginBottom: '1rem' }}>
+              {para}
+            </p>
           ))}
 
           <div

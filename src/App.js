@@ -106,10 +106,10 @@ function App() {
         </div>
 
         <About />
-        <Experience />
         <Skills />
-        <Education />
         <Projects />
+        <Experience />
+        <Education />
       </div>
     </div>
   );
