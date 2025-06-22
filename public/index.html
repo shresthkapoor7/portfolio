@@ -14,6 +14,12 @@
     <meta name="apple-mobile-web-app-title" content="Shresth’s Dev Portfolio" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Shresth Kapoor</title>
+    <script>
+      if (location.hostname.includes("github.io")) {
+        const path = location.pathname + location.search + location.hash;
+        window.location.replace("https://shresth.work/#" + path);
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
