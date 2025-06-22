@@ -7,7 +7,22 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Blogs from "./components/Blogs";
 import BlogPost from "./components/BlogPost";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+
+function RedirectHandler() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirectPath = sessionStorage.redirect;
+    if (redirectPath) {
+      sessionStorage.removeItem("redirect");
+      const relativePath = redirectPath.replace(window.location.origin, "");
+      navigate(relativePath);
+    }
+  }, [navigate]);
+
+  return null;
+}
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
@@ -187,6 +202,7 @@ function App() {
 
   return (
     <Router>
+      <RedirectHandler />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blogs/:id" element={<BlogPost blogPosts={blogPosts} />} />
