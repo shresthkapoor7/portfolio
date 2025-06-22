@@ -1,18 +1,19 @@
 import React from "react";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import shreshthImage from "../images/shresth.jpg";
+import "../about.css";
 
-function About() {
+function About({ showBlogs, setShowBlogs }) {
   const name = "Shresth Kapoor";
   const title = "MS in Computer Science ";
   const paragraphs = [
     "I build web, mobile, and AI applications that are reliable, useful, and user-focused. I enjoy working on projects that are both technically challenging and meaningful.",
 
-    "Previously I was a Software Engineer at TalentTitan, I worked as a full-stack developer during a company rebrand. I cleaned up legacy code, improved performance, and contributed across both frontend and backend systems. I also led efforts to improve code quality using SonarQube and other tools.",
+    "Previously I was a Software Engineer at <a href=\"https://talenttitan.com/\" target=\"_blank\" rel=\"noopener noreferrer\">TalentTitan</a>, I worked as a full-stack developer during a company rebrand. I cleaned up legacy code, improved performance, and contributed across both frontend and backend systems. I also led efforts to improve code quality using SonarQube and other tools.",
 
-    "Recently, I’ve been working on AI workflows, including a Retrieval-Augmented Generation (RAG) system for Obsidian. I enjoy exploring new technologies and often take on side projects to learn and build.",
+    "Recently, I've been working on AI workflows, including a Retrieval-Augmented Generation (RAG) system for Obsidian. I enjoy exploring new technologies and often take on side projects to learn and build.",
 
-    "In my free time, I like customizing my development setup, trying out new tech stacks, and improving my skills through personal projects."
+    "In my free time, I'm working on building StrandsChat - a threaded AI conversation interface at <a href=\"https://strandschat.com\" target=\"_blank\" rel=\"noopener noreferrer\">strandschat.com</a>. It's a space to experiment with context management, multi-turn memory, and AI interaction design."
   ];
 
   return (
@@ -24,51 +25,71 @@ function About() {
         <div className="about-text" style={{ flex: 1 }}>
           <h2>Hello, I'm {name}.</h2>
           <p>
-            <strong>{title}<span style={{ color: 'purple' }}>@ <a href="https://www.nyu.edu/" target="_blank" rel="noopener noreferrer" style={{ color: 'purple', textDecoration: 'none' }}>New York University</a></span></strong>
+            <strong>{title}<span style={{ color: '#57068B' }}>@<a href="https://www.nyu.edu/" target="_blank" rel="noopener noreferrer" style={{ color: '#57068B', textDecoration: 'none' }}>New York University</a></span></strong>
           </p>
           {paragraphs.map((para, index) => (
-            <p key={index} style={{ marginBottom: '1rem' }}>
-              {para}
-            </p>
+            <p key={index} className="updated-links" style={{ marginBottom: '1rem' }} dangerouslySetInnerHTML={{ __html: para }} />
           ))}
 
-          <div
-            className="cta-buttons"
-            style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}
-          >
+          <div className="cta-buttons">
             <a
-              href="mailto:shresthkapoor7@gmail.com"
-              className="cta-button"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                textDecoration: "none",
+              href="#"
+              className="cta-box"
+              onClick={(e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText("shresthkapoor7@gmail.com").then(() => {
+                  alert("Email copied to clipboard!");
+                });
               }}
             >
-              <span role="img" aria-label="email">
-                📨
-              </span>
-              <span style={{ textDecoration: "underline" }}>Get in touch</span>
+              <span role="img" aria-label="email">📨</span>
+              <span className="cta-box-text">Get in touch</span>
             </a>
 
             <a
               href="https://drive.google.com/file/d/1Gz0Hkkq71m8NEFlYLCsMxa33I-yW7Ni2/view"
-              className="cta-button"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                textDecoration: "none",
-              }}
+              className="cta-box"
             >
-              <span role="img" aria-label="resume">
-                📄
-              </span>
-              <span style={{ textDecoration: "underline" }}>
-                Download Resume
-              </span>
+              <span role="img" aria-label="resume">📄</span>
+              <span className="cta-box-text">Download Resume</span>
             </a>
+
+            <div
+              className="cta-box"
+              onClick={() => setShowBlogs(!showBlogs)}
+            >
+              <span className="cta-box-text">
+                Home
+              </span>
+              <div
+                style={{
+                  width: "48px",
+                  height: "24px",
+                  backgroundColor: showBlogs ? "#38bdf8" : "#e5e7eb",
+                  borderRadius: "12px",
+                  position: "relative",
+                  transition: "all 0.3s ease",
+                  display: "flex",
+                  alignItems: "center",
+                  padding: "2px",
+                }}
+              >
+                <div
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    backgroundColor: "white",
+                    borderRadius: "50%",
+                    transform: showBlogs ? "translateX(24px)" : "translateX(0px)",
+                    transition: "all 0.3s ease",
+                    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)"
+                  }}
+                />
+              </div>
+              <span className="cta-box-text">
+                Blogs
+              </span>
+            </div>
           </div>
         </div>
 

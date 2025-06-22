@@ -1,3 +1,4 @@
+
 /* App.css */
 * {
   box-sizing: border-box;
@@ -278,22 +279,30 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.edu-header h3 {
+.edu-title {
+  flex-grow: 1;
+}
+
+.edu-title h3 {
   font-weight: 600;
+  margin: 0;
+}
+
+.edu-subtitle {
+  margin: 0.25rem 0 0;
+  font-style: italic;
+  color: #333;
+  font-size: 0.9rem;
 }
 
 .edu-location {
   text-align: right;
   color: #555;
   font-size: 0.9rem;
-}
-
-.edu-subtitle {
-  margin: 0.5rem 0 0.75rem;
-  font-style: italic;
-  color: #333;
 }
 
 .edu-date {

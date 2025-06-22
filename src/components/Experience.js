@@ -8,38 +8,52 @@ function Experience() {
       <div className="edu-box">
         <div className="edu-entry">
           <div className="edu-header">
-            <h3>Software Engineer, TalentTitan</h3>
+            <div className="edu-title">
+              <h3>Software Engineer, TalentTitan</h3>
+              <p className="edu-subtitle"><em>Full-time Role</em></p>
+            </div>
             <div className="edu-location">
               Gurugram · India <br />
               <span className="edu-date">Jul 2023 – Aug 2024</span>
             </div>
           </div>
-          <p className="edu-subtitle">
-            <em>Full-time Role</em>
-          </p>
-          <p>
-            • Led Spring and Java upgrades, improving tech stack compatibility and reducing transition time by 25%.<br />
-            • Implemented a CDN and optimized load times from 40–50s to 10s on low-speed networks.<br />
-            • Automated daily generation of 100+ web pages using Python and OpenAI API, boosting content ops efficiency.
-          </p>
+          <br></br>
+          <ul>
+            <li>
+              <strong>Led Spring and Java upgrades</strong> for a 25% faster transition to the latest technology versions, addressing compatibility issues and enhancing the tech stack upgrade initiative across the development team.
+            </li>
+            <li>
+              <strong>Increased website load speeds</strong> on slow-speed internet by identifying root causes, proposing solutions, and implementing a CDN for an essential component — reducing load times from 40–50 seconds to just 10 seconds.
+            </li>
+            <li>
+              <strong>Created Python scripts leveraging the OpenAI API</strong>, automating the generation of 100+ web pages per day and streamlining content creation processes.
+            </li>
+          </ul>
         </div>
 
         <div className="edu-entry">
           <div className="edu-header">
-            <h3>Developer Intern, TalentTitan</h3>
+            <div className="edu-title">
+              <h3>Developer Intern, TalentTitan</h3>
+              <p className="edu-subtitle"><em>Internship</em></p>
+            </div>
             <div className="edu-location">
               Gurugram · India <br />
               <span className="edu-date">Jan 2023 – Jun 2023</span>
             </div>
           </div>
-          <p className="edu-subtitle">
-            <em>Internship</em>
-          </p>
-          <p>
-            • Built Angular components and integrated them with Spring Boot REST APIs.<br />
-            • Enhanced UX during company rebranding and ensured cross-browser compatibility using LambdaTest.<br />
-            • Conducted SonarQube analysis and resolved critical code quality and memory issues across 10 services.
-          </p>
+          <br></br>
+          <ul>
+            <li>
+              <strong>Built and maintained Angular components and services</strong>, integrating them with <strong>Spring Boot REST APIs</strong> to build a seamless web application.
+            </li>
+            <li>
+              <strong>Enhanced user experience (UX)</strong> during company rebranding, collaborating with QA to identify and resolve cross-browser issues using <strong>LambdaTest</strong>.
+            </li>
+            <li>
+              <strong>Automated code quality assessments</strong> by conducting <strong>SonarQube analyses</strong> across 10 services, resolving complex code quality issues and memory leaks.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
