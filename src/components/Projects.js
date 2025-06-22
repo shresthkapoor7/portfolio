@@ -36,7 +36,7 @@ function Projects() {
         "The very site you're browsing right now — designed and built from scratch to showcase my skills, projects, and personality.",
       category: "featured",
       tag: "React · GitHub Pages",
-      url: "/portfolio",
+      url: "/",
     },
     {
       id: "project5",
