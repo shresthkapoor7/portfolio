@@ -42,29 +42,11 @@ function App() {
   const initialBlogPosts = [
     {
       id: 1,
-      title: "Getting Started with React Hooks",
-      date: "2023-06-21",
-      excerpt: "Learn how to use React Hooks to manage state and side effects in functional components. This comprehensive guide covers useState, useEffect, and custom hooks with practical examples.",
-      readTime: "5 min read",
-      tags: ["React", "JavaScript", "Frontend"],
-      content: ""
-    },
-    {
-      id: 2,
-      title: "Building Scalable APIs with Node.js",
-      date: "2024-01-10",
-      excerpt: "Explore best practices for building robust and scalable APIs using Node.js and Express. From authentication to error handling, this post covers everything you need to know.",
-      readTime: "8 min read",
-      tags: ["Node.js", "Express", "Backend"],
-      content: ""
-    },
-    {
-      id: 3,
-      title: "CSS Grid vs Flexbox: When to Use What",
-      date: "2024-01-05",
-      excerpt: "A comprehensive guide to choosing between CSS Grid and Flexbox for different layout scenarios. Learn when to use each layout system for optimal results.",
-      readTime: "6 min read",
-      tags: ["CSS", "Frontend", "Layout"],
+      title: "GitHub Pages to Vercel: What Happened",
+      date: "2025-06-22",
+      excerpt: "I've been using GitHub Pages for a while now, but I've been wanting to try out Vercel for a while now. So I decided to move my portfolio to Vercel. This is a guide/rant on how I did it.",
+      readTime: "7 min read",
+      tags: ["Github Pages", "React", "Vercel"],
       content: ""
     }
   ];
