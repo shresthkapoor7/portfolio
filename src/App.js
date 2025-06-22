@@ -7,7 +7,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Blogs from "./components/Blogs";
 import BlogPost from "./components/BlogPost";
-import { HashRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 
 function RedirectHandler() {
   const navigate = useNavigate();
