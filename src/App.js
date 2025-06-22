@@ -186,7 +186,7 @@ function App() {
   );
 
   return (
-    <Router basename="/portfolio">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blogs/:id" element={<BlogPost blogPosts={blogPosts} />} />
