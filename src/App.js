@@ -5,8 +5,6 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import Blogs from "./components/Blogs";
-import BlogPost from "./components/BlogPost";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 
 function RedirectHandler() {
@@ -27,7 +25,6 @@ function RedirectHandler() {
 function App() {
   const [showPopup, setShowPopup] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0);
-  const [showBlogs, setShowBlogs] = useState(false);
 
   const funMessages = [
     "🦁 Lion doesn't concern himself with git commands. He just --force.",
@@ -38,49 +35,6 @@ function App() {
     "😭 Tip: If you don't know what you're doing, try throwing hash-maps at the question",
     "📦 Status: Works on my machine. Good luck out there."
   ];
-
-  const initialBlogPosts = [
-    {
-      id: 1,
-      title: "GitHub Pages to Vercel: What Happened",
-      date: "2025-06-22",
-      excerpt: "I've been using GitHub Pages for a while now, but I've been wanting to try out Vercel for a while now. So I decided to move my portfolio to Vercel. This is a guide/rant on how I did it.",
-      readTime: "7 min read",
-      tags: ["Github Pages", "React", "Vercel"],
-      content: ""
-    }
-  ];
-
-  const [blogPosts, setBlogPosts] = useState(initialBlogPosts);
-
-  useEffect(() => {
-    const fetchBlogContent = async () => {
-      console.log('Starting to fetch blog content...');
-
-      const updatedPosts = await Promise.all(
-        initialBlogPosts.map(async (post) => {
-          try {
-            const response = await fetch(`${process.env.PUBLIC_URL}/blogs/${post.id}.md`);
-            if (response.ok) {
-              const content = await response.text();
-              return { ...post, content };
-            } else {
-              console.error(`Failed to fetch content for blog ${post.id}. Status: ${response.status}`);
-              return post;
-            }
-          } catch (error) {
-            console.error(`Error fetching content for blog ${post.id}:`, error);
-            return post;
-          }
-        })
-      );
-
-      console.log('Setting updated blog posts:', updatedPosts);
-      setBlogPosts(updatedPosts);
-    };
-
-    fetchBlogContent();
-  }, []); // Empty dependency array is fine here since we're using initialBlogPosts directly
 
   function getBannerStyle(message, isPopup) {
     const defaultStyle = {
@@ -166,18 +120,11 @@ function App() {
           )}
         </div>
 
-        <About showBlogs={showBlogs} setShowBlogs={setShowBlogs} />
-
-        {showBlogs ? (
-          <Blogs blogPosts={blogPosts} />
-        ) : (
-          <div>
-            <Skills />
-            <Projects />
-            <Experience />
-            <Education />
-          </div>
-        )}
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
       </div>
     </div>
   );
@@ -187,7 +134,6 @@ function App() {
       <RedirectHandler />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blogs/:id" element={<BlogPost blogPosts={blogPosts} />} />
       </Routes>
     </Router>
   );

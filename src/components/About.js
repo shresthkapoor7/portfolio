@@ -3,7 +3,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import shreshthImage from "../images/shresth.jpg";
 import "../about.css";
 
-function About({ showBlogs, setShowBlogs }) {
+function About() {
   const name = "Shresth Kapoor";
   const title = "MS in Computer Science ";
   const paragraphs = [
@@ -51,45 +51,16 @@ function About({ showBlogs, setShowBlogs }) {
               className="cta-box"
             >
               <span role="img" aria-label="resume">📄</span>
-              <span className="cta-box-text">Download Resume</span>
+              <span className="cta-box-text">See Resume</span>
             </a>
 
-            <div
+            <a
+              href="https://shresth.space"
               className="cta-box"
-              onClick={() => setShowBlogs(!showBlogs)}
             >
-              <span className="cta-box-text">
-                Home
-              </span>
-              <div
-                style={{
-                  width: "48px",
-                  height: "24px",
-                  backgroundColor: showBlogs ? "#38bdf8" : "#e5e7eb",
-                  borderRadius: "12px",
-                  position: "relative",
-                  transition: "all 0.3s ease",
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "2px",
-                }}
-              >
-                <div
-                  style={{
-                    width: "20px",
-                    height: "20px",
-                    backgroundColor: "white",
-                    borderRadius: "50%",
-                    transform: showBlogs ? "translateX(24px)" : "translateX(0px)",
-                    transition: "all 0.3s ease",
-                    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)"
-                  }}
-                />
-              </div>
-              <span className="cta-box-text">
-                Blogs
-              </span>
-            </div>
+              <span role="img" aria-label="blogs">📒</span>
+              <span className="cta-box-text">Dev Notebook</span>
+            </a>
           </div>
         </div>
 
