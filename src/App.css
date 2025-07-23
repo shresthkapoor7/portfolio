@@ -258,56 +258,129 @@ section {
   margin-top: 4rem;
 }
 
+/* Education & Experience - Notion-like styling */
+.education {
+  margin: 3rem 0;
+}
+
 .education h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  letter-spacing: -0.025em;
 }
 
 .edu-box {
-  border-left: 3px solid #333;
-  padding-left: 1.25rem;
-  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .edu-entry {
-  margin-bottom: 2rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.edu-entry:hover {
+  border-color: #cbd5e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .edu-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 .edu-title {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .edu-title h3 {
+  font-size: 1.125rem;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+  color: #1a202c;
+  line-height: 1.4;
 }
 
 .edu-subtitle {
-  margin: 0.25rem 0 0;
-  font-style: italic;
-  color: #333;
-  font-size: 0.9rem;
+  margin: 0;
+  font-size: 0.875rem;
+  color: #718096;
+  font-weight: 500;
 }
 
 .edu-location {
   text-align: right;
-  color: #555;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  color: #4a5568;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .edu-date {
-  font-size: 0.85rem;
-  color: #888;
+  display: inline-block;
+  background: #f7fafc;
+  color: #4a5568;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.edu-entry ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+.edu-entry ul li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.edu-entry ul li:before {
+  content: "•";
+  color: #a0aec0;
+  position: absolute;
+  left: -1rem;
+  font-weight: bold;
+}
+
+.edu-entry ul li:last-child {
+  margin-bottom: 0;
+}
+
+.edu-entry p {
+  margin: 0.5rem 0;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.edu-entry p:first-of-type {
+  margin-top: 0;
+}
+
+.edu-entry strong {
+  color: #2d3748;
+  font-weight: 600;
 }
 
 .about-image a img {

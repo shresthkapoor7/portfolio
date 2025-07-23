@@ -4,6 +4,15 @@ function Projects() {
   const projects = [
     {
       id: "project1",
+      title: "Strands - LLM + Threads 🔥 (Work in Progress)",
+      description:
+      "Instead of a flat, endless chat history, Strands lets you naturally branch conversations, ask follow-up questions, explore alternative ideas without ever losing the flow.",
+      category: "featured",
+      tag: "React · Express · AWS EC2 · TypeScript · OpenRouter/Gemini · PostgreSQL",
+      url: "https://www.strandschat.com/",
+    },
+    {
+      id: "project2",
       title: "Retrieval-Augmented Generation (RAG)",
       description:
         "A system that answers ROS-related queries using data scraping, embedding, and retrieval from sources like GitHub and Medium in a Dockerized environment.",
@@ -12,7 +21,7 @@ function Projects() {
       url: "https://github.com/krishmurjani/cs-gy-6613-final-project",
     },
     {
-      id: "project2",
+      id: "project3",
       title: "Snapple – Scan your food",
       description:
         "Mobile app with camera-based food recognition that offers personalized health advice and workout suggestions based on dietary impact.",
@@ -21,7 +30,7 @@ function Projects() {
       url: "https://github.com/shresthkapoor7/snapple",
     },
     {
-      id: "project3",
+      id: "project4",
       title: "ALATS: Terrestrial Surveillance Bot",
       description:
         "Published IEEE paper. Developed a bot for autonomous navigation and intruder detection using OpenCV, YOLO, and MobileNet SSD on Raspberry Pi.",
@@ -30,16 +39,16 @@ function Projects() {
       url: "https://ieeexplore.ieee.org/document/10234740",
     },
     {
-      id: "project4",
+      id: "project5",
       title: "Portfolio",
       description:
-        "The very site you're browsing right now — designed and built from scratch to showcase my skills, projects, and personality.",
+        "The very site you're browsing right now - designed and built from scratch to showcase my skills, projects, and personality.",
       category: "featured",
-      tag: "React · GitHub Pages",
+      tag: "React · Vercel",
       url: "/",
     },
     {
-      id: "project5",
+      id: "project6",
       title: "TrackMate – Career Fair Job Tracker",
       description:
       "Web app that helps students at career fairs quickly save job listings by scanning QR codes or pasting links. Built with Firebase Auth & Firestore.",
@@ -48,7 +57,7 @@ function Projects() {
       url: "https://shresthkapoor7.github.io/careerfair-tracker/",
     },
     {
-      id: "project6",
+      id: "project7",
       title: "AgroSynth x Reboot The Earth Hackathon",
       description:
       "AgroSynth Weather Intelligence is an open-source platform for agriculture and communities, offering real-time weather data, user alerts, AI forecasts, and interactive maps in a sleek, responsive web app.",
@@ -57,13 +66,13 @@ function Projects() {
       url: "https://shresthkapoor7.github.io/agrosynth/",
     },
     {
-      id: "project7",
-      title: "Strands - LLM + Threads 🔥 (Work in Progress)",
+      id: "project8",
+      title: "Σpace",
       description:
-      "Instead of a flat, endless chat history, Strands lets you naturally branch conversations, ask follow-up questions, explore alternative ideas — without ever losing the flow.",
+      "Personal dev notebook, built with NextJS to track my learnings and projects.",
       category: "featured",
-      tag: "React · Express · AWS EC2 · TypeScript · Gemini · Supabase · SwiftUI",
-      url: "https://www.strandschat.com/",
+      tag: "NextJS · Vercel",
+      url: "https://shresth.space",
     }
   ];
 

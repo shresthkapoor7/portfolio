@@ -9,21 +9,20 @@ function Experience() {
         <div className="edu-entry">
           <div className="edu-header">
             <div className="edu-title">
-              <h3>Software Engineer, TalentTitan</h3>
-              <p className="edu-subtitle"><em>Full-time Role</em></p>
+              <h3>Software Engineer</h3>
+              <p className="edu-subtitle">TalentTitan • Full-time</p>
             </div>
             <div className="edu-location">
-              Gurugram · India <br />
-              <span className="edu-date">Jul 2023 – Aug 2024</span>
+              Gurugram, India
+              <div className="edu-date">Jul 2023 – Aug 2024</div>
             </div>
           </div>
-          <br></br>
           <ul>
             <li>
               <strong>Led Spring and Java upgrades</strong> for a 25% faster transition to the latest technology versions, addressing compatibility issues and enhancing the tech stack upgrade initiative across the development team.
             </li>
             <li>
-              <strong>Increased website load speeds</strong> on slow-speed internet by identifying root causes, proposing solutions, and implementing a CDN for an essential component — reducing load times from 40–50 seconds to just 10 seconds.
+              <strong>Increased website load speeds</strong> on slow-speed internet by identifying root causes, proposing solutions, and implementing a CDN for an essential component - reducing load times from 40–50 seconds to just 10 seconds.
             </li>
             <li>
               <strong>Created Python scripts leveraging the OpenAI API</strong>, automating the generation of 100+ web pages per day and streamlining content creation processes.
@@ -34,15 +33,14 @@ function Experience() {
         <div className="edu-entry">
           <div className="edu-header">
             <div className="edu-title">
-              <h3>Developer Intern, TalentTitan</h3>
-              <p className="edu-subtitle"><em>Internship</em></p>
+              <h3>Developer Intern</h3>
+              <p className="edu-subtitle">TalentTitan • Internship</p>
             </div>
             <div className="edu-location">
-              Gurugram · India <br />
-              <span className="edu-date">Jan 2023 – Jun 2023</span>
+              Gurugram, India
+              <div className="edu-date">Jan 2023 – Jun 2023</div>
             </div>
           </div>
-          <br></br>
           <ul>
             <li>
               <strong>Built and maintained Angular components and services</strong>, integrating them with <strong>Spring Boot REST APIs</strong> to build a seamless web application.

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Skills() {
   const categories = [
@@ -12,7 +12,7 @@ function Skills() {
     // Frameworks
     { id: 'skill1', label: 'AngularJS', category: 'frameworks' },
     { id: 'skill2', label: 'ReactJS', category: 'frameworks' },
-    { id: 'skill3', label: 'Express', category: 'frameworks' },
+    { id: 'skill3', label: 'ExpressJS', category: 'frameworks' },
     { id: 'skill4', label: 'Spring Boot', category: 'frameworks' },
     { id: 'skill5', label: 'Flutter', category: 'frameworks' },
     { id: 'skill6', label: 'SwiftUI', category: 'frameworks' },

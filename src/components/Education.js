@@ -9,17 +9,16 @@ function Education() {
         <div className="edu-entry">
           <div className="edu-header">
             <div className="edu-title">
-              <h3>New York University, Tandon School of Engineering</h3>
-              <p className="edu-subtitle"><em>Master of Science in Computer Science</em></p>
+              <h3>Master of Science in Computer Science</h3>
+              <p className="edu-subtitle">New York University, Tandon School of Engineering</p>
             </div>
             <div className="edu-location">
-              New York · NY <br />
-              <span className="edu-date">Sept 2024 – May 2026</span>
+              New York, NY
+              <div className="edu-date">Sept 2024 – May 2026</div>
             </div>
           </div>
-          <br></br>
           <p>
-            <strong>GPA: </strong> 3.667/4.0
+            <strong>GPA:</strong> 3.667/4.0
           </p>
           <p>
             <strong>Relevant Courses:</strong> Artificial Intelligence, Human Computer Interaction, Programming
@@ -30,17 +29,16 @@ function Education() {
         <div className="edu-entry">
           <div className="edu-header">
             <div className="edu-title">
-              <h3>SRM Institute of Science and Technology</h3>
-              <p className="edu-subtitle"><em>Bachelor of Technology in Computer Science</em></p>
+              <h3>Bachelor of Technology in Computer Science</h3>
+              <p className="edu-subtitle">SRM Institute of Science and Technology</p>
             </div>
             <div className="edu-location">
-              Chennai · India <br />
-              <span className="edu-date">June 2019 – May 2023</span>
+              Chennai, India
+              <div className="edu-date">June 2019 – May 2023</div>
             </div>
           </div>
-          <br></br>
           <p>
-            <strong>GPA: </strong> 9.23/10.0
+            <strong>GPA:</strong> 9.23/10.0
           </p>
           <p>
             <strong>Relevant Courses:</strong> High Performance Computing, Natural Language Processing, Building Applications Using Open Source
