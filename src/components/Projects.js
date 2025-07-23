@@ -110,10 +110,10 @@ function Projects() {
           <a
           key={project.id}
           href={project.url}
-          target={project.id === "project4" ? "_self" : "_blank"}
+          target={project.id === "project5" ? "_self" : "_blank"}
           rel="noopener noreferrer"
           onClick={() => {
-            if (project.id === "project4") {
+            if (project.id === "project5") {
               localStorage.setItem("fromPortfolioProject", "true");
             }
           }}
