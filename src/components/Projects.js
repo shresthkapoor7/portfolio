@@ -10,6 +10,7 @@ function Projects() {
       category: "featured",
       tag: "React · Express · AWS EC2 · TypeScript · OpenRouter/Gemini · PostgreSQL",
       url: "https://www.strandschat.com/",
+      image: "/images/projects/strands.jpg",
     },
     {
       id: "project2",
@@ -19,6 +20,7 @@ function Projects() {
       category: "featured",
       tag: "Python · Docker · MongoDB · Qdrant",
       url: "https://github.com/krishmurjani/cs-gy-6613-final-project",
+      image: "/images/projects/rag.jpg",
     },
     {
       id: "project3",
@@ -28,6 +30,7 @@ function Projects() {
       category: "featured",
       tag: "Mobile · Flutter",
       url: "https://github.com/shresthkapoor7/snapple",
+      image: "/images/projects/snapple.jpg",
     },
     {
       id: "project4",
@@ -37,15 +40,17 @@ function Projects() {
       category: "paper",
       tag: "Research · IEEE",
       url: "https://ieeexplore.ieee.org/document/10234740",
+      image: "/images/projects/alats.jpg",
     },
     {
       id: "project5",
       title: "Portfolio",
       description:
-        "The very site you're browsing right now - designed and built from scratch to showcase my skills, projects, and personality.",
+        "The very site you're browsing right now - designed and built from scratch to showcase my skills, and projects. Click the project card for special recursion message.",
       category: "featured",
       tag: "React · Vercel",
       url: "/",
+      image: "/images/projects/portfolio.jpg",
     },
     {
       id: "project6",
@@ -55,6 +60,7 @@ function Projects() {
       category: "featured",
       tag: "React · Firebase · QR Scanner",
       url: "https://shresthkapoor7.github.io/careerfair-tracker/",
+      image: "/images/projects/trackmate.jpg",
     },
     {
       id: "project7",
@@ -64,6 +70,7 @@ function Projects() {
       category: "featured",
       tag: "React · Supabase · OpenRouter · React Leaflet",
       url: "https://shresthkapoor7.github.io/agrosynth/",
+      image: "/images/projects/agrosynth.jpg",
     },
     {
       id: "project8",
@@ -71,8 +78,9 @@ function Projects() {
       description:
       "Personal dev notebook, built with NextJS to track my learnings and projects.",
       category: "featured",
-      tag: "NextJS · Vercel",
+      tag: "NextJS · Vercel · TypeScript",
       url: "https://shresth.space",
+      image: "/images/projects/space.jpg",
     }
   ];
 
@@ -117,13 +125,22 @@ function Projects() {
               localStorage.setItem("fromPortfolioProject", "true");
             }
           }}
-          className="project-card"
+          className={`project-card ${project.id === "project1" ? "highlight" : ""}`}
           style={{
             textDecoration: "none",
             color: "inherit",
             cursor: "pointer",
           }}
         >
+            <div className="project-image">
+              <img
+                src={project.image}
+                alt={project.title}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
+              />
+            </div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="project-tag">{project.tag}</div>
