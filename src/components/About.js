@@ -13,7 +13,7 @@ function About() {
 
     "Recently, I've been working on AI workflows, including a Retrieval-Augmented Generation (RAG) system for Obsidian. I enjoy exploring new technologies and often take on side projects to learn and build.",
 
-    "In my free time, I'm working on building StrandsChat - a threaded AI conversation interface at <a href=\"https://strandschat.com\" target=\"_blank\" rel=\"noopener noreferrer\">strandschat.com</a>. It's a space to experiment with context management, multi-turn memory, and AI interaction design."
+    "In my free time, I'm working on building Strands - a threaded AI conversation interface at <a href=\"https://strandschat.com\" target=\"_blank\" rel=\"noopener noreferrer\">strandschat.com</a>. It's a space to experiment with context management, multi-turn memory, and AI interaction design."
   ];
 
   return (
