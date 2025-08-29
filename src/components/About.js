@@ -46,13 +46,13 @@ function About() {
               <span className="cta-box-text">Get in touch</span>
             </a>
 
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1Gz0Hkkq71m8NEFlYLCsMxa33I-yW7Ni2/view"
               className="cta-box"
             >
               <span role="img" aria-label="resume">📄</span>
               <span className="cta-box-text">See Resume</span>
-            </a>
+            </a> */}
 
             <a
               href="https://shresth.space"
